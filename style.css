@@ -79,7 +79,7 @@ body{
 /*   === Home Section Styling Starts ===   */
 section.home{
 	position: relative;
-	width: 100%;
+	/*width: 100%;*/
 	min-height: 100vh;
 	padding: 0px 8%;
 }
@@ -446,7 +446,7 @@ section.about{
 **************************************************************************** --*/
 /*   === Skills Section Styling Starts ===   */
 section.skills{
-	width: 100%;
+	/*width: 100%; */
 	padding: 50px 8%;
 	background-color: var(--bg-clr-1);
 }
@@ -473,7 +473,7 @@ section.skills{
 
 /*   === Services Section Styling Starts ===   */
 section.services{
-	width: 100%;
+	/*width: 100%; */
 	padding: 70px 8% 50px;
 	background-color: var(--bg-clr-1);
 	
@@ -723,7 +723,7 @@ section.services{
 
 /*   === Project Order Section Styling Starts ===   */
 section.order-project{
-	width: 100%;
+	/*width: 100%; */
 	padding: 50px 8%;
 	background-color: var(--bg-clr-2);
 	text-align: center;
@@ -748,7 +748,7 @@ section.order-project{
 
 /*   === Portfolio Section Styling Starts ===   */
 section.portfolio{
-	width: 100%;
+	/*width: 100%; */
 	padding: 70px 8% 50px;
 	background-color: var(--bg-clr-1);
 }
@@ -803,7 +803,7 @@ section.portfolio{
 
 /*   === Blog Section Styling Starts ===   */
 section.blog{
-	width: 100%;
+	/*width: 100%;*/
 	padding: 70px 8% 50px;
 	background-color: var(--bg-clr-2);
 }
@@ -896,7 +896,7 @@ section.blog{
 
 /*   === Contact Section Styling Starts ===   */
 section.contact{
-	width: 100%;
+	/*width: 100%;*/
 	padding: 70px 8% 50px;
 	background-color: var(--bg-clr-2);
 }
@@ -1145,6 +1145,10 @@ section.page-footer{
 }
 
 @media(max-width: 668px){
+	body{
+		background-color: #2cb67d;
+		width: 150%;
+	}
 	/* Services Section */
 	.services-contents .service-box{
 		flex-basis: 100%;
@@ -1157,4 +1161,31 @@ section.page-footer{
 	.blog .blog-contents{
 		grid-template-columns: 1fr;
 	}
+}
+/*Thêm sau*/
+@media(max-width: 400px){
+body{
+	background-color: #2cb67d;
+	width: 200%;
+}
+/*
+.about{
+	margin:  0 auto;
+	width: 200%;
+}
+
+.skills {
+	margin:  0 auto;
+	width: 200%;
+}
+
+.services {
+	margin:  0 auto;
+	width: 200%;
+}
+.blog, .portfolio, .contact, .order-project, .page-footer, .home {
+	margin:  0 auto;
+	width: 200%;
+}
+*/
 }
