@@ -59,15 +59,22 @@
 				
 				<br><br>
 				<span>Bạn muốn xem Tiếng Việt?</span>
-				<a href="https://www.thegioididong.com/game-app/cach-dich-trang-web-sang-tieng-viet-tren-google-chrome-cuc-ky-1267222" target="_blank" onclick="showAlert()">Nhấn vào đây</a>
+				<button class="btn-language" style="border: none; background-color: transparent; padding: 0; color: aliceblue;" onclick="showAlert()  ">Nhấn vào đây</button>
 				<script>
-						function showAlert() {
-							const confirmation = confirm('Bạn có muốn xem hướng dẫn để cài đặt ngôn ngữ?');
-							if (confirmation) {
-								window.open('https://www.thegioididong.com/game-app/cach-dich-trang-web-sang-tieng-viet-tren-google-chrome-cuc-ky-1267222', '_blank');
-							}
+					function showAlert() {
+						const confirmation = confirm('Bạn có muốn xem hướng dẫn để cài đặt ngôn ngữ?');
+						if (confirmation) {
+							// Nếu người dùng chọn "Đồng ý", chuyển trang
+							window.open('https://www.thegioididong.com/game-app/cach-dich-trang-web-sang-tieng-viet-tren-google-chrome-cuc-ky-1267222', '_blank');
+						} else {
+							// Nếu người dùng chọn "Hủy", không làm gì cả
+							return;
 						}
-					</script>
+					}
+				</script>
+			
+			
+			
 			</div>
        
             <div class="hero-img">
@@ -219,8 +226,10 @@ Tham gia các sự kiện nghệ thuật và văn hóa: Tham gia vào các sự 
 	<header class="section-heading">
 		<h1>KNOWLEDGE</h1>
 		<p style="display: inline;">I want to share specifically about Adobe design, Electric design and Front-end design. <br><br>
-			Tap the round colored button <div style="width: 10px; height: 10px; background-color: blueviolet; border-radius: 50%; display: inline-block;"></div> to explore the details and experience the quintessential journey of these fields.
-			Let's explore them with me!</p>
+			Tap the round colored button <span style="width: 10px; height: 10px; background-color: blueviolet; border-radius: 50%; display: inline-block;"></span> to explore the details and experience the quintessential journey of these fields.
+			Let's explore them with me!
+		</p> 
+		<br><br>
 	</header>
 
 
@@ -603,7 +612,5 @@ Tham gia các sự kiện nghệ thuật và văn hóa: Tham gia vào các sự 
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com/dist/email.min.js"></script>
 <script type="text/javascript" src="script.js"></script>
 </body>
-<body_2>
-	<div style="width: 100%; height: 200px; background-color: brown;" > Hee </div>
-</body_2>
+
 </html>
