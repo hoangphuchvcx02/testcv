@@ -569,7 +569,9 @@ section.services{
   transform: translateY(-10%);  /*-50%*/
   max-height: 90vh;
   overflow-y: auto;
-  margin: 30px;
+  margin-top: 30px; /*margin 30px*/
+  top: 30px;
+  /*margin: 30px;*/
   padding: 0% 8% 0% 8%;
 
 }
@@ -585,7 +587,61 @@ section.services{
 .overlay-content p, .overlay-content2 p, .overlay-content3 p{
 	word-spacing: 2px;
 	line-height: 1.5;
+	/*font-size: 1.5rem; */
 }
+
+
+
+
+
+.overlay-content2 table{
+		border-collapse: collapse; /* This will remove spacing between table cells */
+		width: 100%; /* Optional: Adjust the width of the table */
+}	  
+.overlay-content2 table th  {
+		  background-color: gray;				
+	  }
+.overlay-content2 table th, .overlay-content2 td {
+		border: 1px solid whitesmoke; /* Add a 1px black border to th and td elements */
+		padding: 8px; /* Optional: Add some padding to improve cell spacing */
+		text-align: center; /* Optional: Align content in cells to the center */
+	  }
+.overlay-content2 img{
+	width: 100%;
+	max-width: 600px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.overlay-content2 #contentDiv{
+	display: none; /* Hide the content by default */
+}
+
+
+
+.overlay-content2 button {
+    background-color: var(--primary-base-clr);
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+.overlay-content2 button:hover {
+    background-color: transparent; /* Set the background color to transparent on hover */
+    color: yellow; /* Change the text color on hover */
+    border: 2px solid yellow; /* Add a yellow border on hover */
+  }
+
+
+
+
 
 
 .closebtn {
@@ -595,7 +651,7 @@ section.services{
   color: white;
   font-size: 80px; /*50*/
   text-decoration: none;
-  margin-left: 90%;
+  margin-left: 90%; /*90*/
   }
 
 .no-scroll {
@@ -611,7 +667,7 @@ section.services{
 .myNav_background {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 120px;
   overflow: hidden;
 }
 
@@ -657,17 +713,26 @@ section.services{
 }
 .overlay-content-standee{
 	display: block;
+	width: 100%;
+	height: 500px;
+	
 
 }
 .overlay-content-standee-left {
 	width: 40%; /* Image occupies 40% of the web page's width */
-	height: 600px;
+	/*height: 600px;*/
 	float: left;
   }
-  
+
+.overlay-content-standee-left img{
+	width: 100%;
+	max-width: 200px;
+
+}
+
   .overlay-content-standee-right {
 	width: 60%; /* Image occupies 40% of the web page's width */
-	height: 600px;
+	/*height: 600px;*/
 	float: left;
 	text-align: center;
   }
@@ -819,11 +884,12 @@ section.blog{
 }
 
 .container_blog{
-	max-width: 100%;
+	max-width: 130%;
 	position: relative;
 }
 .container_blog img{
-	max-width: 100%;
+	/*width: 100%; */
+	max-width: 130%; 
 	height: auto;
 	display: block;
 
@@ -1021,6 +1087,19 @@ section.page-footer{
 
 
 /*   *** Media Query Starts ***   */
+@media(max-width: 5000px){
+	.container_blog{
+		max-width: 100%;
+	}
+	
+	.container_blog img{
+		width: 100%;
+		
+	}
+	.overlay-content p{
+		font-size: x-large;
+	}
+}
 @media(max-width: 968px){
 
 	/* Services Section */
@@ -1036,6 +1115,14 @@ section.page-footer{
 		right: 36% /*initial; */
 		/*bottom: initial; */
 		/*margin-bottom: 20px; */
+	}
+	.container_blog{
+		max-width: 100%;
+	}
+	
+	.container_blog img{
+		width: 100%;
+		
 	}
 }
 
@@ -1096,6 +1183,14 @@ section.page-footer{
 	.portfolio-contents .project-box{
 		width: calc(100% / 2);
 	}
+	.container_blog{
+		max-width: 100%;
+	}
+	
+	.container_blog img{
+		width: 100%;
+		
+	}
 }
 
 @media(max-width: 768px){
@@ -1123,6 +1218,14 @@ section.page-footer{
 	.contact-contents .contact-form{
 		flex-basis: 100%;
 	}
+	.container_blog{
+		max-width: 100%;
+	}
+	
+	.container_blog img{
+		width: 100%;
+		
+	}
 }
 
 @media(max-width: 668px){
@@ -1142,6 +1245,18 @@ section.page-footer{
 	.blog .blog-contents{
 		grid-template-columns: 1fr;
 	}
+	.container_blog{
+		max-width: 100%;
+	}
+	
+	.container_blog img{
+		width: 100%;
+		
+	}
+
+	.overlay-content p{
+		font-size: 15px;
+	}
 }
 /*Thêm sau*/
 @media(max-width: 400px){
@@ -1152,6 +1267,20 @@ body{
 
 p{
 	font-size: 21px;
+}
+
+.container_blog{
+	max-width: 166%;
+}
+
+.container_blog img{
+	width: 120%;
+	height: 600px;
+	margin-left: -16%;
+}
+
+.container_blog p{
+	margin-left: -19%;	
 }
 /*
 .about{
