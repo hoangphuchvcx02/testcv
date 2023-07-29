@@ -182,13 +182,15 @@
 		</div>
 		<div class="skill-box">
 			<p>
+				<!--
                  Good analytical and problem-solving abilities <br>
                  Basic knowledge in HTML/CSS <br>
                  Ability to work effectively in a team and collaborate with colleagues <br>
                  Quick learner with a passion for continuous self-improvement <br>
                  Ability to design graphics using Illustrator <br><br>
                 Activities: Design at MEDIA TEAM of OISP YOUTH UNION AND STUDENTS ASSOCIATION, Event-Photo-Instrument at Bachkhoa OISP Music Bank,...
-				<br><br>Các Soft Skills quan trọng:
+				<br><br> -->
+				<!--Các Soft Skills quan trọng:
 
 Giao tiếp hiệu quả: Kỹ năng giao tiếp là khâu quan trọng để truyền đạt ý kiến, thông tin và ý tưởng một cách rõ ràng và dễ hiểu. Khả năng lắng nghe và đồng cảm cũng là một yếu tố quan trọng trong việc xây dựng mối quan hệ tốt với người khác.
 
@@ -211,7 +213,8 @@ Nhóm nghiên cứu và hội thảo: Tham gia vào các nhóm nghiên cứu ho�
 Gia nhập các tổ chức xã hội: Tham gia vào các tổ chức xã hội như câu lạc bộ, hội học sinh, hội sinh viên giúp rèn luyện kỹ năng giao tiếp và lãnh đạo.
 
 Tham gia các sự kiện nghệ thuật và văn hóa: Tham gia vào các sự kiện nghệ thuật và văn hóa giúp mở rộng tầm nhìn và gặp gỡ những người có cùng sở thích.
-            </p>
+        -->    
+		</p>
 		</div>
 
 	</div>
@@ -248,17 +251,20 @@ Tham gia các sự kiện nghệ thuật và văn hóa: Tham gia vào các sự 
 
 			<br><br>
 			<h2>Event Standee</h2> <br>
+			<div class="overlay-content-standee">
 				<div class="overlay-content-standee-left">
-					<img src="images/photo_1.jpg" style="max-width: auto; height: 500px;">
+					<img src="images/photo_1.jpg" alt="Event image" >
 				</div>
 				<div class="overlay-content-standee-right">	
 					<p>This is a project I completed for a major music event. I created a unique and creative banner using visual elements and colors that aligned with the event's spirit. The banner contributed to attracting attention and engaging the audience. </p>
 				</div>
+			</div>
 			
+			<hr>
 			<br><br>
 			<h2>Book Cover</h2>
 				<p>I created an eye-catching book cover for a literary work. Using Illustrator, I combined visual elements, fonts, and colors to design a captivating cover that reflects the book's content. The book cover helped draw the attention of readers.</p>
-				<img src="images/bookcover_1.png" style="max-width: 200px; height: auto; ">
+				<img src="images/bookcover_1.png" style=" width: 30% ;max-width: 200px; height: auto; ">
 
 			<br><br>
 			<h2>Infographic</h2>
@@ -277,6 +283,120 @@ Tham gia các sự kiện nghệ thuật và văn hóa: Tham gia vào các sự 
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav2('noteId2')">&times;</a>
 		<div class="overlay-content2" id="noteId2">
 			Phần này là phần 2
+			<h1> LAB 1</h1>
+			<p>
+				This project is made in Intel ® Quartus Prime Lite Edition, for DE10-Standard. It is possible, however, to modify the codes to fit any board you want.
+				<br>
+				Here are the requirements. All credit goes to Department of Electronics, Ho Chi Minh city University of Technology.
+				<br>
+				<a href="files/prelab5_kts.pdf" target="_blank">Pre-Lab5_Digital_Design_Ver1.pdf </a> <br>
+				<a href="files/Lab6_kts.pdf" target="_blank"> Lab6_Digital_Design_Ver1.pdf </a><br>
+				<a href="files" target="_blank"> Source </a>
+				<br>
+				I have added a display register for outputting to three 7-segment displays, 3 bits each. It is obvious that base-8 or octal, must be used.
+				<br>
+			</p>
+			
+			<br>
+			<img src="images/overlaycontent2/image4.png" alt="hình mạch">
+		
+		<br>
+		<button id="toggleButton">Toggle Content</button>
+			<div id="contentDiv">
+				<h2> Complete instruction set </h2>
+			<hr><br>
+			<h3> Summary </h3>
+			<p style="font-style: italic;"> Note: Dashed (-) bit means "don't care". </p><br>
+			<table>
+				<tr>
+					<th>Code </th>
+					<th>Operation</th>
+					<th>Meaning</th>
+					<th>Description </th>
+				</tr>
+				<tr>
+				  <td>000xxxyyy	</td>
+				  <td>MV Rx, Ry	</td>
+				  <td> Rx <-  [Ry]	</td>
+				  <td> Copy content of Ry to Rx. </td>
+				</tr>
+				<tr>
+					<td>001xxx---		</td>
+					<td>MVI Rx		</td>
+					<td> Rx <- mem[PC+1]	</td>
+					<td> Fetch RAM data from address PC+1, then load into Rx.</td>
+				</tr>
+				<tr>
+					<td>010xxxyyy			</td>
+					<td>ADD Rx, Ry		</td>
+					<td> Rx <- [Rx] + [Ry]		</td>
+					<td> Add contents of Rx and Ry together, then put the result back to Rx.</td>
+				</tr>
+				<tr>
+					<td>011xxxyyy		</td>
+					<td>SUB Rx, Ry		</td>
+					<td> Rx <- [Rx] - [Ry]		</td>
+					<td> Subtract content of Ry from Rx, then put the result back to Rx.
+					</td>
+				</tr>
+				<tr>
+					<td>100xxxyyy			</td>
+					<td>LD Rx, Ry		</td>
+					<td> Rx <- mem[[Ry]]		</td>
+					<td> Load data into Rx from the RAM address specified in Ry.</td>
+				</tr>
+				<tr>
+					<td>101xxxyyy			</td>
+					<td>ST Rx, Ry			</td>
+					<td> mem[Ry] <- [Rx]			</td>
+					<td> Store data contained in Rx into RAM address found in Ry.</td>
+				</tr>
+				<tr>
+					<td>110xxxyyy				</td>
+					<td>MVNZ Rx, Ry			</td>
+					<td> if G != 0, Rx <- [Ry]				</td>
+					<td> Perform MV Rx, Ry only when G register is not zero. Otherwise, do nothing.</td>
+				</tr>
+				<tr>
+					<td>111xxx---				</td>
+					<td>OUT Rx			</td>
+					<td> HEX[2..0] <- [Rx]				</td>
+					<td> Output content of Rx to three 7-segment displays in octal (base-8).
+					</td>
+				</tr>				
+			  </table>
+
+			<br>
+			<h3> Details </h3>
+			<p style="font-style: italic;">Note: For better appearance, zeroes are replaced with blank cells. </p>
+			<img src="images/overlaycontent2/image5.png">
+			<br>
+			<h2> The debugger, a.k.a the visualizer</h2><hr>
+			<br>
+			<p> 
+				<a href="files/AKVP_x09-main/AKVP_x09-main/debugger/" target="_blank" > The debugger folder</a> have the exact same files as the root folder, plus some extra components to aid in outputting all register contents, RAM contents, and control signals to <a href="https://www.terasic.com.tw/cgi-bin/page/archive.pl?Language=English&No=1081" target="_blank">DE10-Standard's GPIOs</a>. Since there are only 36 GPIO pins while the total number of outputs is 162 (13 x 9-bit registers + 29 control signals + 7 RAM address bits + 9 RAM content bits), I have to put together some external components to do the trick.
+			</p>
+			<img src="images/overlaycontent2/image1.jpg" alt="Mach dien">
+			<br> 
+			<p>
+				First off, the register contents. I soldered 117 LEDs into a 9 x 13 matrix, with 9 anodes each column connected, and 13 cathodes each row connected. <a href="files/AKVP_x09-main/AKVP_x09-main/debugger/ring_counter.vhd" target="_blank"> An inverted ring counter</a> loops through one row at time at super high speed, while the when else block at the end of the <a href="files/AKVP_x09-main/AKVP_x09-main/debugger/debugger.vhd" target="_blank">top-level entity</a> determines which register will be outputted to the columns of each row.
+			</p>
+			<img src="images/overlaycontent2/image2.jpg" alt="Mach dien">
+			<img src="images/overlaycontent2/image3.jpg" alt="Mach dien">
+			<br>
+			<p>
+				Outputting control signals and RAM stuff is slightly more complicated. The <a href="files/AKVP_x09-main/AKVP_x09-main/debugger/PISO.vhd" target="_blank"> parallel-to-serial converter </a> utilizes DE10-Standard's internal 50 MHz clock to continuously generate three lines of serial data: data input, shift clock, and output clock, which will then feed into respective inputs of one <a href="https://assets.nexperia.com/documents/data-sheet/74HC_HCT595.pdf" target="_blank">74HC595 IC</a>, which is chained together with more 74HC595's to turn the serial data back to parallel, forming a 3-to-29 converter for control signals, and 3-to-16 for RAM.
+			</p>
+			
+			</div>
+			<br><hr>
+			<br><br><br>
+			  
+			
+			
+			
+			
+			
 		</div>
 	</div>
 
@@ -558,6 +678,32 @@ Tham gia các sự kiện nghệ thuật và văn hóa: Tham gia vào các sự 
 </section>
 
 
+<header style="padding-left: 50px;">
+	<h1> Map</h1>
+</header>
+<div id="mapContainer">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6685794128007!2d106.65946253889135!3d10.76000535954177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eefc9c265e9%3A0x5801541ce0809648!2zS8O9IHTDumMgeMOhIELDoWNoIEtob2E!5e0!3m2!1svi!2s!4v1690021443466!5m2!1svi!2s&dark" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+<style>
+
+	#mapContainer {
+		display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+
+	}
+	iframe {
+		width: 90%;
+		height: 400px;
+		border-radius: 20px;
+		opacity: 0.35;
+	}
+
+	iframe:hover {
+    opacity: 0.75;
+	}
+</style>
 
 
 <!-- ***********************************************************************
@@ -577,26 +723,7 @@ Tham gia các sự kiện nghệ thuật và văn hóa: Tham gia vào các sự 
 **                              PHẦN GÌ ĐÓ
 **
 ****************************************************************************-->
-<h1>Check-In</h1>
-<div id="mapContainer">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.6685794128007!2d106.65946253889135!3d10.76000535954177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752eefc9c265e9%3A0x5801541ce0809648!2zS8O9IHTDumMgeMOhIELDoWNoIEtob2E!5e0!3m2!1svi!2s!4v1690021443466!5m2!1svi!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-<style>
 
-	#mapContainer {
-		display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0;
-
-	}
-	iframe {
-		width: 80%;
-		height: 500px;
-
-		border-radius: 40px;
-	}
-</style>
 
 
 
