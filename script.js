@@ -62,6 +62,7 @@ function openNav(noteId) {
 	document.getElementById("myNav").style.width = "100%";
 	document.getElementById(noteId).style.display = "block";
 	document.body.classList.add("no-scroll");
+	document.getElementById("fa-solid fa-bars-staggered").style.opacity = "0";
 }
 
 function closeNav(noteId) {
@@ -69,6 +70,7 @@ function closeNav(noteId) {
 	document.getElementById(noteId).style.display = "none";
 	document.body.classList.remove("no-scroll");
 	window.scrollTo(0, mainScrollPos);
+
 }
 
 var mainScrollPos2;
@@ -169,3 +171,22 @@ function closePopup() {
 	)
 	.catch((err) => console.log(err))
 	}
+
+	/*************************************************************************
+	 * 
+	 * 								NỘI DUNG TRANG 2
+	 *
+	 * ************************************************************************/
+leButton = document.getElementById('toggleButton');
+	var contentDiv = document.getElementById('contentDiv');
+	var i = 0;
+  
+	toggleButton.addEventListener('click', function() {
+	  i++;
+	  if (i % 2 === 1) {
+		contentDiv.style.display = 'block';
+	  } else {
+		contentDiv.style.display = 'none';
+	  }
+	});
+			
