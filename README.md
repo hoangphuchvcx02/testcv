@@ -1,2 +1,2 @@
 # testcv
-https://github.com/hoangphuchvcx02/testcv
+https://hoangphuchvcx02.github.io/testcv/
