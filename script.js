@@ -57,12 +57,13 @@ function pageScrollFunction(){
 ////Mở một trang phụ
 
 var mainScrollPos;
+
 function openNav(noteId) {
 	mainScrollPos = window.pageYOffset || document.documentElement.scrollTop;
 	document.getElementById("myNav").style.width = "100%";
 	document.getElementById(noteId).style.display = "block";
 	document.body.classList.add("no-scroll");
-	document.getElementById("fa-solid fa-bars-staggered").style.opacity = "0";
+	
 }
 
 function closeNav(noteId) {
