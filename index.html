@@ -89,7 +89,7 @@
             </div>
         </div>
     </section>
-<!-- **********************************************************************
+<!-- ***********************************************************************
 **
 **                              PHẦN ABOUT
 **
@@ -762,11 +762,32 @@
 <section class="order-project">
 	<p>Do you interested about me?</p>
 	<h1>Please message to me </h1>
-	<button class="btn project-order-btn" onclick="openMessenger()">Message Me</button>
+	<button class="btn project-order-btn" onclick="searchZalo('0375125981')"">Message Me</button>
+	<!-- onclick="openMessenger()" -->
 	<script>
 	function openMessenger() {
     window.open("https://m.me/phuc.luonghoang02");
     }
+
+	function searchZalo(phoneNumber) {
+            // Sử dụng URL scheme của Zalo để tạo liên kết
+            var zaloURL = 'zalo://profile?contact=' + phoneNumber;
+            
+            // Kiểm tra xem trình duyệt có hỗ trợ URL scheme của Zalo hay không
+            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            if (/android/i.test(userAgent)) {
+                // Trình duyệt trên Android
+                window.location.href = zaloURL;
+            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+                // Trình duyệt trên iOS (iPhone/iPad)
+                window.location.href = 'https://apps.apple.com/us/app/zalo/id579523206';
+            } else {
+                // Trình duyệt trên máy tính hoặc các thiết bị khác
+                alert('Vui lòng mở Zalo trên điện thoại và tìm kiếm 0375125981 để tìm thông tin.');
+            }
+        }
+
 	</script>
 </section>
 
