@@ -265,6 +265,9 @@ section.home{
 	max-width: 400px;
 	height: auto;
 }
+
+
+
 .hero .hero-img .images-box{
 	position: absolute;
 	width: 100%;
@@ -633,6 +636,7 @@ section.services{
     color: var(--main-heading-clr);
     margin-bottom: 20px;
 	text-align: center;
+	padding-top: 20px;
 }
 
 .overlay-content p, .overlay-content2 p, .overlay-content3 p{
@@ -659,7 +663,7 @@ section.services{
 	  }
 .overlay-content2 img{
 	width: 100%;
-	max-width: 600px;
+
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -744,13 +748,11 @@ section.services{
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  color: #ffffff; /* Màu chữ, bạn có thể thay đổi tùy ý */
-  /*font-size: 30px ; /* Cỡ chữ, bạn có thể thay đổi tùy ý */
-  font-weight: bold; /* Độ đậm của chữ, bạn có thể thay đổi tùy ý */
+  color: #ffffff; 
+  /*font-size: 30px ; */
+  font-weight: bold; 
 }
 
-
-  
 .overlay-content p {
 	font-family: 'Alegreya Sans', sans-serif;
 	/*font-size: x-large;*/
@@ -809,25 +811,6 @@ section.services{
 
 }
 
-  /* Apply the animation to the zoom-effect class */
- /* .zoom-effect {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	animation-delay: 5s;
-	animation: zoom-in 5s ease-in; 
-  }
-
-@keyframes zoom-in {
-	from {
-		opacity:  scale(0);
-	}
-	to {
-		opacity:  scale(1);
-	}
-}
-
-*/
 
 
 
@@ -968,14 +951,17 @@ section.blog{
 .popup_blog {
 	display: none;
 	position: fixed;
+	width: 90%;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: white;
 	padding: 20px;
 	border: 1px solid #ccc;
-	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 2px  2px 8px rgba(128, 124, 124, 0.5);
 	border-radius: 20px;
+	z-index: 1000;
+
   }
   
   .popup_blog p {
@@ -1320,15 +1306,28 @@ p{
 	max-width: 166%;
 }
 
+.overlay-content2 p, .overlay-content3 p{
+	font-size: 12px;
+}
+.overlay-content2 table{
+	font-size: 8px;
+}
 .container_blog img{
 	width: 120%;
 	height: 600px;
 	margin-left: -16%;
 }
 
+
 .container_blog p{
 	margin-left: -19%;	
 }
+
+.container_blog .popup_blog p{
+	margin-left: 0;
+}
+
+
 /*
 .about{
 	margin:  0 auto;
